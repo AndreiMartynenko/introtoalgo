@@ -13,7 +13,12 @@ func linearSearch(arr []int, target int) int {
 
 func main() {
 	arr := []int{5, 2, 4, 6, 1, 3}
-	target := 4
+	target := 6
 	result := linearSearch(arr, target)
-	fmt.Println(result)
+	if result != -1 {
+		fmt.Println("Element found at index: ", result)
+	} else {
+		fmt.Println("Element not found")
+	}
+
 }
