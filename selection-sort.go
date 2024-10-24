@@ -28,4 +28,9 @@ func selectionSort(arr []int) []int {
 		// Swap the minimum element with the current element
 		arr[i], arr[min] = arr[min], arr[i]
 	}
+	return arr
+}
+
+func main() {
+
 }
