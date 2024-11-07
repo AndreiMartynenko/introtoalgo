@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 /*
 Exercise 2.2-2
 Consider sorting n numbers stored in array A by first finding the smallest element of
@@ -33,12 +31,12 @@ func selectionSort(arr []int) []int {
 	return arr
 }
 
-func main() {
-	arr := []int{64, 25, 12, 22, 11}
-	fmt.Println("Unsorted array:", arr)
+// func main() {
+// 	arr := []int{64, 25, 12, 22, 11}
+// 	fmt.Println("Unsorted array:", arr)
 
-	// Sort the array using selection sort
-	sortedArr := selectionSort(arr)
-	fmt.Println("Sorted array:", sortedArr)
+// 	// Sort the array using selection sort
+// 	sortedArr := selectionSort(arr)
+// 	fmt.Println("Sorted array:", sortedArr)
 
-}
+// }

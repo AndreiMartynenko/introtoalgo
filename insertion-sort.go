@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // non-decreasing order
 //func insertionSort(arr []int) []int {
 //	// Implement insertion sort here
@@ -35,9 +33,9 @@ func insertionSort(arr []int) []int {
 	return arr
 }
 
-func main() {
-	arr := []int{8, 3, 9, 6, 1, 7}
-	result := insertionSort(arr)
-	fmt.Println(result)
+// func main() {
+// 	arr := []int{8, 3, 9, 6, 1, 7}
+// 	result := insertionSort(arr)
+// 	fmt.Println(result)
 
-}
+// }
