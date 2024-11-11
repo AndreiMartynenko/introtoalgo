@@ -83,15 +83,15 @@ func Buy(p Payer) {
 
 // --------------
 
-func main() {
+// func main() {
 
-	myWallet := &Wallet{Cash: 100}
-	Buy(myWallet)
+// 	myWallet := &Wallet{Cash: 100}
+// 	Buy(myWallet)
 
-	var myMoney Payer
-	myMoney = &Card{Balance: 100, Cardholder: "Alice T."}
-	Buy(myMoney)
+// 	var myMoney Payer
+// 	myMoney = &Card{Balance: 100, Cardholder: "Alice T."}
+// 	Buy(myMoney)
 
-	myMoney = &ApplePay{Money: 9}
-	Buy(myMoney)
-}
+// 	myMoney = &ApplePay{Money: 9}
+// 	Buy(myMoney)
+// }
