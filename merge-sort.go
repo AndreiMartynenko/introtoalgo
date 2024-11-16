@@ -1,15 +1,15 @@
 package main
 
 // MergeSort recursively divides and sorts the array using merge sort
-func MergeSort(arr []int) []int {
+func mergeSort(arr []int) []int {
 	// Base case: if the array has 1 or fewer elements, it's already sorted
 	if len(arr) <= 1 {
 		return arr
 	}
 	// Step 1: Divide the array into two halves
 	mid := len(arr) / 2
-	left := MergeSort(arr[:mid])  // Recursively sort the left half
-	right := MergeSort(arr[mid:]) // Recursively sort the right half
+	left := mergeSort(arr[:mid])  // Recursively sort the left half
+	right := mergeSort(arr[mid:]) // Recursively sort the right half
 
 	// Step 2: Conquer by merging sorted halves
 	return merge(left, right)
