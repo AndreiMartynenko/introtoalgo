@@ -17,25 +17,26 @@ func mergeSort(arr []int) []int {
 
 // merge combines two sorted arrays into a single sorted array
 func merge(left, right []int) []int {
-	sorted := make([]int, 0, len(left)+len(right))
+	// sorted := make([]int, 0, len(left)+len(right))
+	result := []int{}
 	i, j := 0, 0
 
 	// Step 3: Combine by comparing elements and merging
 	for i < len(left) && j < len(right) {
 		if left[i] < right[j] {
-			sorted = append(sorted, left[i])
+			result = append(result, left[i])
 			i++
 		} else {
-			sorted = append(sorted, right[j])
+			result = append(result, right[j])
 			j++
 		}
 	}
 
 	// Append any remaining elements from the left or right array
-	sorted = append(sorted, left[i:]...)
-	sorted = append(sorted, right[j:]...)
+	result = append(result, left[i:]...)
+	result = append(result, right[j:]...)
 
-	return sorted
+	return result
 }
 
 // func main() {
