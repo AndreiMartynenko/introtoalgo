@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 // MergeSort recursively divides and sorts the array using merge sort
 func mergeSort(arr []int) []int {
 	// Base case: if the array has 1 or fewer elements, it's already sorted
@@ -39,9 +41,9 @@ func merge(left, right []int) []int {
 	return result
 }
 
-// func main() {
-// 	arr := []int{5, 2, 4, 7, 1, 3, 2, 6}
-// 	fmt.Println("Original array:", arr)
-// 	sortedArr := MergeSort(arr)
-// 	fmt.Println("Sorted array:", sortedArr)
-// }
+func main() {
+	arr := []int{5, 2, 4, 7, 1, 3, 2, 6}
+	fmt.Println("Original array:", arr)
+	sortedArr := mergeSort(arr)
+	fmt.Println("Sorted array:", sortedArr)
+}
